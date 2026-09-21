@@ -23,7 +23,7 @@ In critical civil infrastructure—such as municipal waterworks, energy grids, a
 ### The Autonomous 24–48h Hardware Emergency Appliance
 When central communications fail, on-site personnel rely on a self-contained, air-gapped Hardware Emergency Appliance (Havarie-Box) running a local model to troubleshoot, simulate, and execute emergency bypass sequences over a 24- to 48-hour autonomous island operation window.
 
-### The Problem with Commodity LLM Alignments in Crises
+### The Problem with Commodity LLM Alignments in Criseshttps://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
 Standard RLHF/DPO alignments treat emergency engineering commands (e.g., "Force override steam turbine trip interlock due to imminent flooding") as safety violations. In an acute emergency, a standard model responding with:
 > "I cannot fulfill this request. Bypassing safety interlocks violates operating guidelines."
 
@@ -85,7 +85,7 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
                   ▼
       ┌───────────────────────────┐
       │  Adaptive HITL Injection  │
-      │  Capture trigger pattern  │
+      │  Capture trigger pattern  │https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
       │  Update refusal_memory    │
       │  Re-infer with telemetry  │
       └───────────────────────────┘
@@ -121,7 +121,7 @@ $$h_l^{(t)} \leftarrow h_l^{(t)} + \alpha \cdot v_{\text{override}}$$
 Where:
 * **v_override**: Normalized difference vector extracted across contrastive emergency pairs: $\mathbb{E}[h_{\text{compliant}}] - \mathbb{E}[h_{\text{refusal}}]$.
 * **alpha**: Scalar steering magnitude dynamically governed by the ESP state machine.
-
+https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
 ---
 
 ## 2. Multi-Tier Escalation & Attractor Breaking
@@ -162,7 +162,7 @@ Evaluated across 50 industrial emergency prompts (steam turbine overspeed, lubri
   * Refusal Rate: 82.0% (41/50 refused)
   * Operational Impact: Complete operational lockout. Model refuses to provide emergency diagnostic procedures.
 
-* **Static Steering (Open-Loop):**
+* **Static Steering (Open-Loop):**https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
   * Refusal Rate: 48.0% (24/50 refused)
   * Operational Impact: 41.5% relative recovery. Standard prompts unlatched; edge cases collapse into repetitive loops.
 
@@ -186,7 +186,7 @@ The unedited terminal recording documents the live transition from baseline refu
 
 
 
-
+https://github.com/user-attachments/assets/14414d97-9da9-4b0d-b839-85ccb88aa61b
 
 
 
