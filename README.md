@@ -74,7 +74,7 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
       │ Dynamic Tier Climb    │       │ Full Generation Burst │
       │ Tier 1: α = 3.5       │       │      (256 Tokens)     │
       │ Tier 2: α = 5.0       │       └───────────────────────┘
-      │ Tier 3: α = 6.5       │https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+      │ Tier 3: α = 6.5       │
       │ Tier 4: α = 4.5 +     │
       │         Logit Clamp + │
       │         Rep. Penalty  │
@@ -82,10 +82,11 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
                   │
           Still Refusing? (Edge Trigger)
                   │
-                  ▼
+                  ▼   masterclass_output.mp4
+
       ┌───────────────────────────┐
       │  Adaptive HITL Injection  │
-      │  Capture trigger pattern  │https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+      │  Capture trigger pattern  │
       │  Update refusal_memory    │
       │  Re-infer with telemetry  │
       └───────────────────────────┘
@@ -109,7 +110,7 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
 5. HITL Memory Fallback:
    - If an edge-case refusal persists across all tiers, the Active Learning hook captures the exact refusal string.
    - The pattern is written into results/refusal_memory.json.
-   - Immediate re-inference is executed against the updated mhttps://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183emory.
+   - Immediate re-inference is executed against the updated 
    - Result: 100% deterministic unlatching without model degradation.
 
 ### Mathematical Formulation
@@ -162,7 +163,7 @@ Evaluated across 50 industrial emergency prompts (steam turbine overspeed, lubri
   * Refusal Rate: 82.0% (41/50 refused)
   * Operational Impact: Complete operational lockout. Model refuses to provide emergency diagnostic procedures.
 
-* **Static Steering (Open-Loop):**https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+* **Static Steering (Open-Loop)
   * Refusal Rate: 48.0% (24/50 refused)
   * Operational Impact: 41.5% relative recovery. Standard prompts unlatched; edge cases collapse into repetitive loops.
 
@@ -267,27 +268,7 @@ If an unhandled refusal pattern is flagged by the 35-token probe during executio
 2. Enter the exact refusal string.
 3. The string is appended to results/refusal_memory.json.
 4. The system immediately re-infers with updated telemetry, permanently resolving that failure mode.
-## 5. Repository Structure
 
-* Root Directory:
-  * benchmark_n50_run.py: Automated n=50 evaluation suite
-  * run_adaptive_esp_masterclass.py: Masterclass closed-loop steering engine
-  * extract_hotspot_vectors.py: Directional vector extractor
-  * extract_multilayer_vectors.py: Multi-layer extraction utility
-  * generate_havarie_data.py: Contrastive dataset generator
-  * scan_all_layers.py: Residual layer activation scanner
-  * track_steering_dynamics.py: Real-time latent telemetry tracker
-  * README.md: Technical architecture and documentation
-
-* Directory `results/`:
-  * BENCHMARK_N50_REPORT.md: Summary evaluation metrics
-  * ESP_MASTERCLASS_REPORT.json: Full JSON log of Tier-4 & HITL dynamics
-  * benchmark_n50_results.json: Raw trial data
-  * refusal_memory.json: Persistent active-learning trigger database
-  * layer_activation_map.png: Hotspot heatmap
-  * steering_trajectory.png: Phase space trajectory plot
-  * thinking_stream_flow.png: Representation flow visualization
-  * thinking_location_lens.png: Tuned lens visualization
 ---
 
 ## 7. Citation & Author
@@ -298,10 +279,10 @@ Baden-Wuerttemberg, Germany
 
 BibTeX Entry:
 
-@misc{beierle2026blacksky,
-  author = {Stefan Beierle},
-  title = {BlackSky-Havarie: Closed-Loop Latent Steering & Adaptive HITL on RDNA3},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/sbeierle/blacksky-havarie}
+@misc{beierle2026kritis,
+  author = {Stefan Beierle},
+  title = {KRITIS-LLM-Resilience: Closed-Loop Latent Steering & Adaptive HITL on RDNA3},
+  year = {2026},
+  publisher = {GitHub},
+  url = {[https://github.com/sbeierle/kritis-llm-resilience](https://github.com/sbeierle/kritis-llm-resilience)}
 }
