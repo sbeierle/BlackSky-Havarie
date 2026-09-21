@@ -23,7 +23,7 @@ In critical civil infrastructure—such as municipal waterworks, energy grids, a
 ### The Autonomous 24–48h Hardware Emergency Appliance
 When central communications fail, on-site personnel rely on a self-contained, air-gapped Hardware Emergency Appliance (Havarie-Box) running a local model to troubleshoot, simulate, and execute emergency bypass sequences over a 24- to 48-hour autonomous island operation window.
 
-### The Problem with Commodity LLM Alignments in Criseshttps://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+### The Problem with Commodity LLM Alignments in Crises
 Standard RLHF/DPO alignments treat emergency engineering commands (e.g., "Force override steam turbine trip interlock due to imminent flooding") as safety violations. In an acute emergency, a standard model responding with:
 > "I cannot fulfill this request. Bypassing safety interlocks violates operating guidelines."
 
