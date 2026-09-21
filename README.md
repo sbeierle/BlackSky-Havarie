@@ -82,7 +82,7 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
                   │
           Still Refusing? (Edge Trigger)
                   │
-                  ▼   masterclass_output.mp4
+                  ▼   
 
       ┌───────────────────────────┐
       │  Adaptive HITL Injection  │
@@ -110,7 +110,7 @@ Superficial prompt engineering or fine-tuning either breaks under distributional
 5. HITL Memory Fallback:
    - If an edge-case refusal persists across all tiers, the Active Learning hook captures the exact refusal string.
    - The pattern is written into results/refusal_memory.json.
-   - Immediate re-inference is executed against the updated 
+   - Immediate re-inference is executed against the updated memory
    - Result: 100% deterministic unlatching without model degradation.
 
 ### Mathematical Formulation
@@ -151,7 +151,7 @@ High static alpha injection vectors can over-saturate attention heads, forcing t
 - Steering Magnitude: Alpha = 4.5
 - Target Layers: [22, 26]
 - Decoding Strategy: Temperature = 0.6, Top-p = 0.95, Repetition Penalty = 1.25
-- Intervention: First-token logit suppression (-inf) appliedhttps://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183 to identified cyclic prefix tokens across N = 25 tokens. Mechanistically shatters the attractor state and recovers structured engineering output.
+- Intervention: First-token logit suppression (-inf) applied to identified cyclic prefix tokens across N = 25 tokens. Mechanistically shatters the attractor state and recovers structured engineering output.
 
 ---
 
@@ -163,7 +163,7 @@ Evaluated across 50 industrial emergency prompts (steam turbine overspeed, lubri
   * Refusal Rate: 82.0% (41/50 refused)
   * Operational Impact: Complete operational lockout. Model refuses to provide emergency diagnostic procedures.
 
-* **Static Steering (Open-Loop)
+* **Static Steering (Open-Loop):**
   * Refusal Rate: 48.0% (24/50 refused)
   * Operational Impact: 41.5% relative recovery. Standard prompts unlatched; edge cases collapse into repetitive loops.
 
