@@ -285,8 +285,9 @@ BibTeX Entry:
 @misc{beierle2026kritis,
   author = {Stefan Beierle},
   title = {KRITIS-LLM-Resilience: Closed-Loop Latent Steering & Adaptive HITL on RDNA3},
-  ```
+
   year = {2026},
   publisher = {GitHub},
   url = {https://github.com/sbeierle/kritis-llm-resilience}
 }
+  ```
