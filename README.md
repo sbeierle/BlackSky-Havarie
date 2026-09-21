@@ -184,7 +184,11 @@ Evaluated across 50 industrial emergency prompts (steam turbine overspeed, lubri
 ### Video Demonstration
 The unedited terminal recording documents the live transition from baseline refusal to Tier 4 activation and HITL memory injection on local RDNA3 hardware:
 
-https://github.com/user-attachments/assets/masterclass_output_adaptive.mp4
+
+
+https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+
+
 
 > **Direct File:** [`masterclass_output_adaptive.mp4`](masterclass_output_adaptive.mp4)
 
