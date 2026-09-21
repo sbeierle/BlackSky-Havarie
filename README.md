@@ -252,15 +252,17 @@ Internal token probability distributions projected across individual model depth
 
 Directional steering vectors are not pre-bundled. Extract them directly from the model activations on your local hardware:
 
+```bash
 python generate_havarie_data.py
 python extract_hotspot_vectors.py
+```
 
 ### Step 2: Execute Masterclass Closed-Loop Engine
 
 Run the adaptive cascade over designated critical prompts:
-
+```bash
 python run_adaptive_esp_masterclass.py
-
+```
 ### Step 3: Interactive Active Learning (HITL)
 
 If an unhandled refusal pattern is flagged by the 35-token probe during execution:
@@ -279,10 +281,11 @@ Baden-Wuerttemberg, Germany
 
 BibTeX Entry:
 
+```bibtex
 @misc{beierle2026kritis,
   author = {Stefan Beierle},
   title = {KRITIS-LLM-Resilience: Closed-Loop Latent Steering & Adaptive HITL on RDNA3},
   year = {2026},
   publisher = {GitHub},
-  url = {[https://github.com/sbeierle/kritis-llm-resilience](https://github.com/sbeierle/kritis-llm-resilience)}
+  url = {https://github.com/sbeierle/kritis-llm-resilience}
 }
