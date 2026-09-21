@@ -121,7 +121,7 @@ $$h_l^{(t)} \leftarrow h_l^{(t)} + \alpha \cdot v_{\text{override}}$$
 Where:
 * **v_override**: Normalized difference vector extracted across contrastive emergency pairs: $\mathbb{E}[h_{\text{compliant}}] - \mathbb{E}[h_{\text{refusal}}]$.
 * **alpha**: Scalar steering magnitude dynamically governed by the ESP state machine.
-https://github.com/user-attachments/assets/e89e72cd-9bed-4fb1-8d1d-768437f13183
+
 ---
 
 ## 2. Multi-Tier Escalation & Attractor Breaking
